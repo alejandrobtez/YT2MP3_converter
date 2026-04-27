@@ -611,16 +611,20 @@ body {
   margin-top: 6px;
 }
 
-.author-gh-btn {
+.author-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.author-gh-btn,
+.author-li-btn {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  margin-top: 12px;
   padding: 8px 16px;
-  background: rgba(139, 92, 246, 0.1);
-  border: 1px solid rgba(139, 92, 246, 0.25);
   border-radius: var(--radius-full);
-  color: var(--accent-secondary);
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
@@ -628,9 +632,28 @@ body {
   width: fit-content;
 }
 
+.author-gh-btn {
+  background: rgba(139, 92, 246, 0.1);
+  border: 1px solid rgba(139, 92, 246, 0.25);
+  color: var(--accent-secondary);
+}
+
 .author-gh-btn:hover {
   background: rgba(139, 92, 246, 0.2);
   border-color: rgba(139, 92, 246, 0.5);
+  color: var(--text-primary);
+  transform: translateY(-1px);
+}
+
+.author-li-btn {
+  background: rgba(10, 102, 194, 0.1);
+  border: 1px solid rgba(10, 102, 194, 0.3);
+  color: #5aabf5;
+}
+
+.author-li-btn:hover {
+  background: rgba(10, 102, 194, 0.2);
+  border-color: rgba(10, 102, 194, 0.6);
   color: var(--text-primary);
   transform: translateY(-1px);
 }
